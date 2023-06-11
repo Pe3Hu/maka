@@ -1,0 +1,134 @@
+[
+	{
+		"title": "stroke of lightning",
+		"source": "lightning",
+		"root": "punishment",
+		"affix": "nothing",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "top",
+		"scatter": 6,
+		"degree": 2
+	},
+	{
+		"title": "wild flame",
+		"source": "fire",
+		"root": "punishment",
+		"affix": "nothing",
+		"duplicate count": 1,
+		"duplicate change": "\"-1\"",
+		"location": "middle",
+		"scatter": 7,
+		"degree": 2
+	},
+	{
+		"title": "spread of poison",
+		"source": "nature",
+		"root": "punishment",
+		"affix": "nothing",
+		"duplicate count": 2,
+		"duplicate change": "\"==\"",
+		"location": "bottom",
+		"scatter": 8,
+		"degree": 3
+	},
+	{
+		"title": "cliff collapse",
+		"source": "earth",
+		"root": "punishment",
+		"affix": "nothing",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "bottom",
+		"scatter": 8,
+		"degree": 2
+	},
+	{
+		"title": "tidal wave",
+		"source": "water",
+		"root": "punishment",
+		"affix": "nothing",
+		"duplicate count": 1,
+		"duplicate change": "\"+1\"",
+		"location": "middle",
+		"scatter": 7,
+		"degree": 2
+	},
+	{
+		"title": "long blizzard",
+		"source": "ice",
+		"root": "punishment",
+		"affix": "impossible to get cards",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "bottom",
+		"scatter": 8,
+		"degree": 2
+	},
+	{
+		"title": "sudden hurricane",
+		"source": "air",
+		"root": "punishment",
+		"affix": "forced to retrieve two cards",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "top",
+		"scatter": 6,
+		"degree": 2
+	},
+	{
+		"title": "parched ground",
+		"source": "lava",
+		"root": "punishment",
+		"affix": "loss of mana",
+		"duplicate count": 1,
+		"duplicate change": "\"==\"",
+		"location": "middle",
+		"scatter": 7,
+		"degree": 2
+	},
+	{
+		"title": "fertile soil",
+		"source": "lava, nature",
+		"root": "grace",
+		"affix": "health replenishment",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "middle",
+		"scatter": 7,
+		"degree": 2
+	},
+	{
+		"title": "frozen rock",
+		"source": "earth, ice",
+		"root": "grace",
+		"affix": "prevent health loss",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "bottom",
+		"scatter": 8,
+		"degree": 2
+	},
+	{
+		"title": "sea breeze",
+		"source": "water, air",
+		"root": "grace",
+		"affix": "mana replenishment",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "top",
+		"scatter": 6,
+		"degree": 2
+	},
+	{
+		"title": "fury of storm",
+		"source": "lightning, fire",
+		"root": "grace",
+		"affix": "perfect combination",
+		"duplicate count": 0,
+		"duplicate change": "nothing",
+		"location": "middle",
+		"scatter": 7,
+		"degree": 2
+	}
+]

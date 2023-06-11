@@ -1,0 +1,50 @@
+[
+ {
+  "Title": "Jester 1",
+  "Architype": "Jester",
+  "Main": "Rage",
+  "Auxiliary": "Sense"
+ },
+ {
+  "Title": "Potter 1",
+  "Architype": "Potter",
+  "Main": "Power",
+  "Auxiliary": "Mind"
+ },
+ {
+  "Title": "Peasant 1",
+  "Architype": "Peasant",
+  "Main": "Health",
+  "Auxiliary": "Body"
+ },
+ {
+  "Title": "Miner 1",
+  "Architype": "Miner",
+  "Main": "Rage",
+  "Auxiliary": "Body"
+ },
+ {
+  "Title": "Sailor 1",
+  "Architype": "Sailor",
+  "Main": "Power",
+  "Auxiliary": "Sense"
+ },
+ {
+  "Title": "Sentinel 1",
+  "Architype": "Sentinel",
+  "Main": "Mana",
+  "Auxiliary": "Spirit"
+ },
+ {
+  "Title": "Messenger  1",
+  "Architype": "Messenger",
+  "Main": "Mana",
+  "Auxiliary": "Mind"
+ },
+ {
+  "Title": "Blacksmith 1",
+  "Architype": "Blacksmith",
+  "Main": "Health",
+  "Auxiliary": "Spirit"
+ }
+]

@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvmc0gunlfbih"]
+
+[ext_resource type="Script" path="res://scene/0/wettbewerb.gd" id="1_cjm02"]
+
+[node name="Wettbewerb" type="MarginContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_cjm02")
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0.894118, 0.894118, 0.894118, 1)
+
+[node name="Stadion" type="GridContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+columns = 4

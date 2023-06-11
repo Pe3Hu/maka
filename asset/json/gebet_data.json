@@ -1,0 +1,74 @@
+[
+ {
+  "Title": "Jester Regular 1",
+  "Creed": "Jester",
+  "Type": "Regular",
+  "Auxiliary": "Sense",
+  "Multiplier": 70,
+  "Echo": 1,
+  "Etikett": "stroke of lightning"
+ },
+ {
+  "Title": "Potter Regular 1",
+  "Creed": "Potter",
+  "Type": "Regular",
+  "Auxiliary": "Mind",
+  "Multiplier": 50,
+  "Echo": 1,
+  "Etikett": "wild flame"
+ },
+ {
+  "Title": "Peasant Regular 1",
+  "Creed": "Peasant",
+  "Type": "Regular",
+  "Auxiliary": "Body",
+  "Multiplier": 10,
+  "Echo": 1,
+  "Etikett": "spread of poison"
+ },
+ {
+  "Title": "Miner Regular 1",
+  "Creed": "Miner",
+  "Type": "Regular",
+  "Auxiliary": "Body",
+  "Multiplier": 110,
+  "Echo": 1,
+  "Etikett": "cliff collapse"
+ },
+ {
+  "Title": "Sailor Regular 1",
+  "Creed": "Sailor",
+  "Type": "Regular",
+  "Auxiliary": "Sense",
+  "Multiplier": 30,
+  "Echo": 1,
+  "Etikett": "tidal wave"
+ },
+ {
+  "Title": "Sentinel Regular 1",
+  "Creed": "Sentinel",
+  "Type": "Regular",
+  "Auxiliary": "Spirit",
+  "Multiplier": 60,
+  "Echo": 1,
+  "Etikett": "long blizzard"
+ },
+ {
+  "Title": "Messenger Regular 1",
+  "Creed": "Messenger",
+  "Type": "Regular",
+  "Auxiliary": "Mind",
+  "Multiplier": 40,
+  "Echo": 1,
+  "Etikett": "sudden hurricane"
+ },
+ {
+  "Title": "Blacksmith Regular 1",
+  "Creed": "Blacksmith",
+  "Type": "Regular",
+  "Auxiliary": "Spirit",
+  "Multiplier": 80,
+  "Echo": 1,
+  "Etikett": "parched ground"
+ }
+]
