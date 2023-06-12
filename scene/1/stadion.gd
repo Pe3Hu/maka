@@ -14,6 +14,7 @@ func set_parent(parent_) -> void:
 func set_mannschafts() -> void:
 	for mannschaft in parent.arr.mannschaft:
 		mannschaft.obj.stadion = parent
+		mannschaft.obj.trainerin.scene.myself.put_challengers_on_the_stadion()
 		$VBox.add_child(mannschaft.obj.trainerin.scene.myself)
 
 

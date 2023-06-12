@@ -14,21 +14,12 @@ class Spielkarte:
 		obj.album = input_.album
 		word.kind = input_.kind
 		num.rank = input_.rank
-		arr.etikett = []
 		init_scene()
 
 
 	func init_scene() -> void:
 		scene.myself = Global.scene.spielkarte.instantiate()
 		scene.myself.set_parent(self)
-
-
-	func clear_etiketts() -> void:
-		while arr.etikett.size() > 0:
-			var etikett = arr.etikett.pop_front()
-			etikett.obj.spielkarte.obj.album.num.etikett -= 1
-			etikett.obj.spielkarte = null
-			etikett.scene.myself.queue_free()
 
 
 #Альбом album
@@ -40,7 +31,6 @@ class Album:
 
 
 	func _init(input_: Dictionary) -> void:
-		num.etikett = 0
 		obj.croupier = input_.croupier
 		init_spielkartes()
 
@@ -104,7 +94,6 @@ class Album:
 		var spielkarte = arr.spielkarte.archive.pop_front()
 		arr.spielkarte.thought.append(spielkarte)
 		obj.croupier.scene.myself.add_spielkarte_into_thought(spielkarte)
-		obj.croupier.dict.out[spielkarte.num.rank].erase(spielkarte.word.kind)
 		
 		if arr.spielkarte.archive.size() == 0:
 			pull_full_section("memoir")
@@ -117,8 +106,9 @@ class Album:
 
 
 	func fill_thought() -> void:
-		while arr.spielkarte.thought.size() < obj.croupier.num.draw.current:
-			pull_spielkarte_from_archive()
+		if obj.croupier.obj.athleten.arr.phase.front() == "draw":
+			while arr.spielkarte.thought.size() < obj.croupier.num.draw.current:
+				pull_spielkarte_from_archive()
 
 
 	func full_reset() -> void:

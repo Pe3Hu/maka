@@ -15,9 +15,7 @@ var scene = {}
 func init_num() -> void:
 	num.index = {}
 	num.index.stadion = 0
-	num.index.spieler = 0
 	num.index.athleten = 0
-	num.index.etikett = 0
 	
 	num.stat = {}
 	num.stat.min = {}
@@ -317,14 +315,15 @@ func init_window_size():
 	vec.size.window.center = Vector2(vec.size.window.width/2, vec.size.window.height/2)
 	
 	vec.size.node = {}
-	vec.size.node.spielkarte = Vector2(1, 1) * num.size.spielkarte.a
+	vec.size.node.spielkarte = Vector2.ONE * num.size.spielkarte.r * 2
 
 
 func init_scene() -> void:
 	scene.sport = load("res://scene/0/sport.tscn")
-	scene.wettbewerb = load("res://scene/0/wettbewerb.tscn")
-	scene.stadion = load("res://scene/0/stadion.tscn")
-	scene.trainerin = load("res://scene/1/trainerin.tscn")
+	scene.trainerin = load("res://scene/0/trainerin.tscn")
+	scene.kombi = load("res://scene/0/kombi.tscn")
+	scene.wettbewerb = load("res://scene/1/wettbewerb.tscn")
+	scene.stadion = load("res://scene/1/stadion.tscn")
 	scene.croupier = load("res://scene/4/croupier.tscn")
 	scene.spielkarte = load("res://scene/5/spielkarte.tscn")
 

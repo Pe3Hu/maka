@@ -23,6 +23,7 @@ func set_vertexs() -> void:
 		vertexs.append(vertex)
 	
 	$PolygonBG.set_polygon(vertexs)
+	$PolygonBG.offset = Vector2.ONE * r
 
 
 func update_rec_size() -> void:

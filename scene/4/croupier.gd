@@ -24,7 +24,7 @@ func add_spielkarte_into_thought(spielkarte_):
 
 func convert_thought_into_dream(spielkarte_):
 	$HBox/Spielkarte/Thought.remove_child(spielkarte_.scene.myself)
-	$HBox/Spielkarte/Dream.add_child(spielkarte_.scene.myself)
+	parent.obj.athleten.obj.mannschaft.obj.trainerin.obj.kombi.continue_combo_with(spielkarte_)
 	
 	if $HBox/Spielkarte/Thought.get_child_count() == 0:
 		$HBox/Spielkarte.set("theme_override_constants/separation", 0)

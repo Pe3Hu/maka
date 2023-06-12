@@ -33,15 +33,17 @@ class Stadion:
 		for mannschaft in arr.mannschaft:
 			for challenger in mannschaft.obj.trainerin.arr.challenger:
 				challenger.obj.croupier.pull_standard_spielkartes()
+			
+			mannschaft.obj.trainerin.start_combo()
 
 
-	func clean_out_table() -> void:
+	func clean_out() -> void:
 		for mannschaft in arr.mannschaft:
 			for challenger in mannschaft.obj.trainerin.arr.challenger:
 				challenger.obj.croupier.reset_section("dream")
 
 
-	func close_table() -> void:
+	func close() -> void:
 		for croupier in arr.croupier:
 			croupier.reset_after_stadion()
 		
@@ -74,7 +76,6 @@ class Wettbewerb:
 		
 		init_scene()
 		set_phases_by_wettbewerb()
-		init_athletens()
 		init_standings()
 		next_round()
 
@@ -85,16 +86,8 @@ class Wettbewerb:
 		obj.sport.scene.myself.get_node("Wettbewerb").add_child(scene.myself)
 
 
-	func init_athletens() -> void:
-		num.challengers = dict.mannschaft.keys().size()
-		
-		for mannschaft in dict.mannschaft.keys():
-			for athleten in mannschaft.obj.trainerin.arr.challenger:
-				dict.mannschaft[mannschaft].append(athleten)
-				athleten.obj.croupier.scene.myself.update_color()
-
-
 	func init_standings() -> void:
+		num.challengers = dict.mannschaft.keys().size()
 		dict.standings = {}
 		num.round = {}
 		num.round.current = 0
@@ -160,12 +153,11 @@ class Wettbewerb:
 		
 		match word.type:
 			"standart":
-				arr.phase.append("clean out table")
+				arr.phase.append("clean out")
 				arr.phase.append("make deal")
 				arr.phase.append("athleten queue")
 		
 		num.turn.current += 1
-		show_hp()
 
 
 	func check_end() -> void:
@@ -186,20 +178,6 @@ class Wettbewerb:
 				mannschafts[mannschaft][athleten.word.credo] = athleten.num.score
 		
 			print(mannschafts[mannschaft])
-
-
-	func show_hp() -> void:
-		var mannschafts = {}
-		
-		for mannschaft in dict.mannschaft.keys():
-			mannschafts[mannschaft] = {}
-			
-			for athleten in dict.mannschaft[mannschaft]:
-				if athleten.obj.croupier.obj.stadion != null:
-					var hp = athleten.obj.anzeige.scene.myself.get_hp()
-					
-					if hp > 0:
-						mannschafts[mannschaft][athleten.num.index] = hp
 
 
 	func pause() -> void:

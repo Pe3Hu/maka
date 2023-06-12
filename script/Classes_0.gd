@@ -1,6 +1,33 @@
 extends Node
 
 
+#Комбо kombi
+class Kombi:
+	var arr = {}
+	var obj = {}
+	var scene = {}
+
+
+	func _init(input_: Dictionary) -> void:
+		obj.trainerin = input_.trainerin
+		init_scene()
+		arr.spielkarte = {}
+		arr.spielkarte.main = []
+		arr.spielkarte.auxiliary = []
+
+
+	func init_scene() -> void:
+		scene.myself = Global.scene.kombi.instantiate()
+		scene.myself.set_parent(self)
+		obj.trainerin.scene.myself.get_node("VBox").add_child(scene.myself)
+		obj.trainerin.scene.myself.get_node("VBox").move_child(scene.myself, 0)
+
+
+	func continue_combo_with(spielkarte_: Classes_5.Spielkarte) -> void:
+		arr.spielkarte.append(spielkarte_)
+		scene.myself.accommodate_spielkarte(spielkarte_)
+
+
 #Тренер trainerin
 class Trainerin:
 	var arr = {}
@@ -13,6 +40,7 @@ class Trainerin:
 		obj.mannschaft = input_.mannschaft
 		arr.challenger = []
 		init_scene()
+		init_kombi()
 
 
 	func init_scene() -> void:
@@ -20,9 +48,22 @@ class Trainerin:
 		scene.myself.set_parent(self)
 
 
+	func init_kombi() -> void:
+		var input = {}
+		input.trainerin = self
+		obj.kombi = Classes_0.Kombi.new(input)
+
+
 	func set_challengers() -> void:
-		for athleten in obj.mannschaft.arr.athleten:
-			arr.challenger.append(athleten)
+		arr.challenger.append(obj.mannschaft.arr.athleten.front())
+		#for athleten in obj.mannschaft.arr.athlet
+
+
+	func start_combo() -> void:
+		for challenger in arr.challenger:
+			var spielkarte = challenger.obj.croupier.obj.album.arr.spielkarte.thought.front()
+			challenger.obj.croupier.obj.album.convert_thought_into_dream(spielkarte)
+
 
 
 #Команда mannschaft

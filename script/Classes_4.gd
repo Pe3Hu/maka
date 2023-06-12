@@ -14,11 +14,8 @@ class Croupier:
 		num.draw = {}
 		num.draw.total = input_.draw
 		num.draw.current = num.draw.total
-		num.harmony = 0
 		obj.athleten = input_.athleten
 		obj.stadion = null
-		flag.skip = false
-		flag.white_skin = false
 		dict.out = {}
 		init_scene()
 		init_album()
@@ -36,13 +33,13 @@ class Croupier:
 
 
 	func pull_standard_spielkartes():
-		flag.skip = false
-		flag.white_skin = false
 		obj.album.fill_thought()
 		
-		for _i in range(obj.album.arr.spielkarte.thought.size()-1, -1, -1):
-			var spielkarte = obj.album.arr.spielkarte.thought[_i]
-			obj.album.convert_thought_into_dream(spielkarte)
+		#for _i in range(obj.album.arr.spielkarte.thought.size()-1, -1, -1):
+		#	var spielkarte = obj.album.arr.spielkarte.thought[_i]
+		#	obj.album.convert_thought_into_dream(spielkarte)
+		
+		obj.athleten.arr.phase.pop_front()
 
 
 	func calc_chance_of_losing() -> Dictionary:

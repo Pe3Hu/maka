@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cvmc0gunlfbih"]
 
-[ext_resource type="Script" path="res://scene/0/wettbewerb.gd" id="1_cjm02"]
+[ext_resource type="Script" path="res://scene/1/wettbewerb.gd" id="1_ig64k"]
 
 [node name="Wettbewerb" type="MarginContainer"]
 anchors_preset = 8
@@ -19,7 +19,7 @@ theme_override_constants/margin_left = 5
 theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
-script = ExtResource("1_cjm02")
+script = ExtResource("1_ig64k")
 
 [node name="BG" type="ColorRect" parent="."]
 layout_mode = 2

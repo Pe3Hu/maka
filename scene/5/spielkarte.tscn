@@ -18,11 +18,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rrbh0")
 
-[node name="PolygonBG" type="Polygon2D" parent="."]
-
 [node name="BG" type="ColorRect" parent="."]
 layout_mode = 2
 color = Color(0, 0, 0, 1)
+
+[node name="PolygonBG" type="Polygon2D" parent="."]
+color = Color(0.517647, 0.517647, 0.517647, 1)
 
 [node name="Label" type="HBoxContainer" parent="."]
 layout_mode = 2

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdpdhjv6gdbx5"]
+
+[ext_resource type="Script" path="res://scene/0/trainerin.gd" id="1_fadfe"]
+
+[node name="Trainerin" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_fadfe")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="Croupier" type="HBoxContainer" parent="VBox"]
+layout_mode = 2

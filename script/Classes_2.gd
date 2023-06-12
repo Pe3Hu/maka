@@ -18,6 +18,7 @@ class Athleten:
 		obj.wettbewerb = null
 		init_achteck()
 		init_croupier()
+		set_phases()
 
 
 	func init_scene() -> void:
@@ -38,9 +39,15 @@ class Athleten:
 
 	func init_croupier() -> void:
 		var input = {}
-		input.draw = 2
+		input.draw = 5
 		input.athleten = self
 		obj.croupier = Classes_4.Croupier.new(input)
+
+
+	func set_phases() -> void:
+		arr.phase = []
+		arr.phase.append("draw")
+		arr.phase.append("reset")
 
 
 	func choose_best_outfit() -> void:

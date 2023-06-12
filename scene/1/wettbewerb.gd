@@ -41,7 +41,6 @@ func call_follow_phase() -> void:
 	if parent.arr.phase.size() == 0:
 		parent.set_phases_by_wettbewerb()
 	
-	
 	if phase == "make deal":
 		parent.flag.pause = true
 	
